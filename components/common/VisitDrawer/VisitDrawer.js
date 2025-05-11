@@ -11,9 +11,9 @@ import {
   Typography,
   Flex,
 } from "antd";
-import SelectField from "@/app/components/common/SelectField/SelectField";
 import styles from "./VisitDrawer.module.css";
 import Link from "next/link";
+import SelectField from "../SelectField/SelectField";
 
 const { TextArea } = Input;
 const { Title } = Typography;

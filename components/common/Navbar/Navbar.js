@@ -1,8 +1,8 @@
 "use client";
 
 import styles from "./Navbar.module.css";
-import Logo from "../../../../public/logos/logo.png";
-import Bell from "../../../../public/icons/bell.png";
+import Logo from "/logos/logo.png";
+import Bell from "/icons/bell.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
