@@ -1,6 +1,6 @@
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "./Footer.module.css";
-import TwitterLogo from "../../../../public/icons/twitter.svg";
+// import TwitterLogo from "../../../../public/icons/twitter.svg";
 import Link from "next/link";
 
 function Footer() {
@@ -13,10 +13,10 @@ function Footer() {
             for a business.
           </p>
           <div>
+            {/* <Image src={TwitterLogo} alt="twitter" />
             <Image src={TwitterLogo} alt="twitter" />
             <Image src={TwitterLogo} alt="twitter" />
-            <Image src={TwitterLogo} alt="twitter" />
-            <Image src={TwitterLogo} alt="twitter" />
+            <Image src={TwitterLogo} alt="twitter" /> */}
           </div>
         </div>
         <div className={styles.footerTopRight}>

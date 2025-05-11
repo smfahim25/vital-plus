@@ -1,8 +1,8 @@
 "use client";
 
 import styles from "./Navbar.module.css";
-import Logo from "/logos/logo.png";
-import Bell from "/icons/bell.png";
+// import Logo from "/logos/logo.png";
+// import Bell from "/icons/bell.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -139,7 +139,11 @@ const LoggedInNavOptions = ({
             ],
           }}
         >
-          <Image src={Bell} alt="bell" style={{ cursor: "pointer" }} />
+          <Image
+            src="/icons/bell.png"
+            alt="bell"
+            style={{ cursor: "pointer" }}
+          />
         </Dropdown>
       </div>
     </>
@@ -192,7 +196,7 @@ const Navbar = ({ isSignedIn, user }) => {
               : "/"
           }
         >
-          <Image src={Logo} alt="vitalplus" />
+          <Image src="/logos/logo.png" alt="vitalplus" />
         </Link>
 
         {!isLoggedIn ? (
