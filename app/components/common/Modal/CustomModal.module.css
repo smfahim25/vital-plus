@@ -1,7 +1,7 @@
 .customModal .ant-modal-content {
   padding: 0 !important;
   overflow: hidden;
-  border-radius: 8px !important;
+  /* border-radius: 8px !important; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -17,12 +17,13 @@
   padding: 16px 24px;
   background-color: #e5e7eb;
   border-bottom: 1px solid #e8e8e8;
+  border-radius: 15px 15px 0 0;
 }
 
 .modalTitle {
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
 }
 
 .closeButton {
@@ -52,5 +53,5 @@
   justify-content: flex-end;
   padding: 16px 24px;
   background-color: #e5e7eb;
-  border-top: 1px solid #e8e8e8;
+  border-radius: 0 0 15px 15px;
 }

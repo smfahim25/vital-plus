@@ -11,11 +11,16 @@ import {
   Modal,
   Flex,
 } from "antd";
-import { DownCircleOutlined, UpCircleOutlined } from "@ant-design/icons";
+import {
+  DownCircleOutlined,
+  SearchOutlined,
+  UpCircleOutlined,
+} from "@ant-design/icons";
 import styles from "./service.module.css";
 import MainLayout from "@/app/components/layouts/MainLayout";
 import SelectField from "@/app/components/common/SelectField/SelectField";
 import CustomModal from "@/app/components/common/Modal/CustomModal";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const { TextArea } = Input;
 
@@ -142,20 +147,22 @@ export default function ServiceAuthorizationTable() {
           type="text"
           icon={
             expandedRowKeys.includes(record.key) ? (
-              <UpCircleOutlined
+              <ChevronUp
+                size={30}
                 style={{
-                  fontSize: "20px",
                   backgroundColor: "#F3F4F6",
-                  borderRadius: "10px",
+                  borderRadius: "15px",
+                  padding: "5px",
                   color: "black",
                 }}
               />
             ) : (
-              <DownCircleOutlined
+              <ChevronDown
+                size={30}
                 style={{
-                  fontSize: "20px",
                   backgroundColor: "#F3F4F6",
-                  borderRadius: "10px",
+                  borderRadius: "15px",
+                  padding: "5px",
                   color: "black",
                 }}
               />
@@ -397,7 +404,7 @@ export default function ServiceAuthorizationTable() {
         <div className={styles.container}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <div className={styles.icon}>🔷</div>
+              <div className={styles.icon}></div>
               <h2>Service Authorization</h2>
             </div>
             <div className={styles.actions}>
@@ -428,6 +435,7 @@ export default function ServiceAuthorizationTable() {
               //   suffix={<SearchOutlined />}
               className={styles.searchInput}
             />
+            <Button className={styles.SearchBtn} icon={<SearchOutlined />} />
             {/* </div> */}
           </div>
 

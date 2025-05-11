@@ -155,7 +155,7 @@ p {
 }
 
 .ant-input {
-  border: 1px solid #d0d3d7 !important;
+  /* border: 1px solid #d0d3d7 !important; */
   border-radius: 8px !important;
   padding: 8px;
 }
@@ -256,8 +256,17 @@ p {
 
 .ant-modal-content {
   padding: 0 !important;
-  border-radius: 10px !important;
+  border-radius: 30px !important;
 }
-.ant-modal .ant-modal-content {
-  border-radius: 10px !important;
+
+.ant-tabs .ant-tabs-tab {
+  font-size: 16px !important;
+  color: #717680;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #3c3897;
+}
+.ant-tabs .ant-tabs-ink-bar {
+  background: #3c3897;
 }

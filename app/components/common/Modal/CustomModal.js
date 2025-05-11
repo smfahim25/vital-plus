@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Modal as AntModal } from "antd";
+import { Modal } from "antd";
 import styles from "./CustomModal.module.css";
 
 const CustomModal = ({
@@ -11,15 +11,17 @@ const CustomModal = ({
   width = 600,
 }) => {
   return (
-    <AntModal
+    <Modal
       title={null}
       open={open}
       onCancel={onCancel}
+      centered
       footer={null}
       closable={false}
       width={width}
-      className={styles.customModal}
+      // className={styles.customModal}
       maskClosable={true}
+      // style={{ borderRadius: "20px" }}
     >
       <div className={styles.modalContainer}>
         <div className={styles.modalHeader}>
@@ -31,7 +33,7 @@ const CustomModal = ({
         <div className={styles.modalBody}>{children}</div>
         {footer && <div className={styles.modalFooter}>{footer}</div>}
       </div>
-    </AntModal>
+    </Modal>
   );
 };
 
