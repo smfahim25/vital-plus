@@ -202,24 +202,24 @@ export const careProviderItems = [
 ];
 
 export const visitItems = [
-  {
-    key: "call-dashboard",
-    label: <Link href={"/visit/call-dashboard"}>Call Dashboard</Link>,
-  },
-  {
-    key: "visit-search",
-    label: <Link href={"/visit/search"}>Visit Search</Link>,
-  },
-  {
-    key: "appointments",
-    label: <Link href={"/visit/appointments"}>Appointments</Link>,
-  },
-  {
-    key: "bulk-visit-maintenance",
-    label: (
-      <Link href={"/visit/bulk-visit-maintenance"}>Bulk Visit Maintenance</Link>
-    ),
-  },
+  // {
+  //   key: "call-dashboard",
+  //   label: <Link href={"/visit/call-dashboard"}>Call Dashboard</Link>,
+  // },
+  // {
+  //   key: "visit-search",
+  //   label: <Link href={"/visit/search"}>Visit Search</Link>,
+  // },
+  // {
+  //   key: "appointments",
+  //   label: <Link href={"/visit/appointments"}>Appointments</Link>,
+  // },
+  // {
+  //   key: "bulk-visit-maintenance",
+  //   label: (
+  //     <Link href={"/visit/bulk-visit-maintenance"}>Bulk Visit Maintenance</Link>
+  //   ),
+  // },
   {
     key: "create-new",
     label: <Link href={"/visit/new"}>Advanced form</Link>,
