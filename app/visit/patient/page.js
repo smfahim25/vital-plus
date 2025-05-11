@@ -1,7 +1,7 @@
 "use client";
 import { Form, Input, DatePicker, Button } from "antd";
 import styles from "./Patient.module.css";
-import SelectField from "@/app/components/common/SelectField/SelectField";
+import SelectField from "@/components/common/SelectField/SelectField";
 import MainLayout from "@/components/Layouts/MainLayout";
 
 const { TextArea } = Input;

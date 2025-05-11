@@ -17,8 +17,8 @@ import {
   UpCircleOutlined,
 } from "@ant-design/icons";
 import styles from "./service.module.css";
-import SelectField from "@/app/components/common/SelectField/SelectField";
-import CustomModal from "@/app/components/common/Modal/CustomModal";
+import SelectField from "@/components/common/SelectField/SelectField";
+import CustomModal from "@/components/common/Modal/CustomModal";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import MainLayout from "@/components/Layouts/MainLayout";
 
