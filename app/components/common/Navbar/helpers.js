@@ -220,6 +220,22 @@ export const visitItems = [
       <Link href={"/visit/bulk-visit-maintenance"}>Bulk Visit Maintenance</Link>
     ),
   },
+  {
+    key: "create-new",
+    label: <Link href={"/visit/new"}>Advanced form</Link>,
+  },
+  {
+    key: "service-new",
+    label: <Link href={"/visit/service"}>Service Authorization</Link>,
+  },
+  {
+    key: "patient-new",
+    label: <Link href={"/visit/patient"}>Patient Info</Link>,
+  },
+  {
+    key: "profile-new",
+    label: <Link href={"/profile"}>Account Details</Link>,
+  },
 ];
 
 export const actionItems = [

@@ -18,7 +18,7 @@ import {
   actionItems,
   billingItems,
 } from "./helpers";
-import { signOut } from "@/app/user";
+// import { signOut } from "@/app/user";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import VisitDrawer from "../VisitDrawer/VisitDrawer";
@@ -195,7 +195,7 @@ const Navbar = ({ isSignedIn, user }) => {
           <Image src={Logo} alt="vitalplus" />
         </Link>
 
-        {isLoggedIn ? (
+        {!isLoggedIn ? (
           <LoggedInNavOptions
             isMobile={isMobile}
             toggleMobileMenu={toggleMobileMenu}
